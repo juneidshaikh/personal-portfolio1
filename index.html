@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juneid Shaikh | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hidden checkbox that controls the Dark Mode theme -->
+  <input type="checkbox" id="theme-toggle" hidden>
+
+  <!-- Everything is wrapped inside this div so the checkbox can control its CSS variables -->
+  <div class="page-wrapper">
+    <nav id="navbar">
+      <div class="logo">&lt;/&gt; Juneid Shaikh</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Clicking this label toggles the hidden checkbox above -->
+      <label for="theme-toggle" class="theme-btn"></label>
+    </nav>
+
+    <section id="home" class="section">
+      <div class="container home-container">
+        <div class="home-text">
+          <h1>Hi, I'm <span class="highlight">Juneid Shaikh</span></h1>
+          <h2>First-Year AI/ML & Software Engineering Student</h2>
+          <p>Welcome to my portfolio website! Explore my journey, skills, and projects.</p>
+          <div class="btn-group">
+            <a href="#about" class="btn">About Me &rarr;</a>
+            <a href="#projects" class="btn btn-outline">View Projects &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a passionate software engineering student with a strong focus on web development, object-oriented programming, and algorithms. I enjoy exploring new AI technologies, building responsive web applications, and finding creative solutions to complex problems. My goal is to become a skilled full-stack developer and build impactful software.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="card">
+          <h3>B.Tech in Artificial Intelligence & Machine Learning</h3>
+          <p><strong>Bosscoder School of Technology & S-VYASA Deemed to be University</strong></p>
+          <p>First-Year Student (2026 - Present)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-info"><span>HTML & CSS (Flexbox/Grid)</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>Java & OOP</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-info"><span>Git & GitHub Workflows</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid-layout">
+          <div class="card">
+            <h3>ZeroCrash (SIH 2026)</h3>
+            <p>Adaptive path planning and collision avoidance prototype for autonomous vehicles.</p>
+            <p><strong>Tech:</strong> MATLAB, Simulink, RoadRunner</p>
+          </div>
+          <div class="card">
+            <h3>stayfinder</h3>
+            <p>A web application integrated with cloud databases to manage property listings and backend services.</p>
+            <p><strong>Tech:</strong> Supabase, GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="grid-layout">
+          <div class="card">
+            <h3>Creative Writing</h3>
+            <p>Composing romantic poetry and song lyrics in Hindi and Urdu.</p>
+          </div>
+          <div class="card">
+            <h3>Music</h3>
+            <p>Listening to hip-hop and R&B, especially tracks by The Weeknd.</p>
+          </div>
+          <div class="card">
+            <h3>Reading & Gaming</h3>
+            <p>Reading dark fantasy novels and playing PC/Mobile games.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="achievement-list">
+          <li><strong>Smart India Hackathon 2026:</strong> Serving as Team Leader for project ZeroCrash (Team ID 166185).</li>
+          <li><strong>JEE Main 2026:</strong> Successfully completed the engineering entrance examination.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <!-- HTML5 Native Validation: "required" and type="email" force the browser to check the form -->
+        <form class="contact-form" action="#">
+          <input type="text" placeholder="Your Name" required minlength="2">
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required minlength="10"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
